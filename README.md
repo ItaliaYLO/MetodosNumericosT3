@@ -19,7 +19,7 @@ Consiste en transformar la matriz de coeficientes ampliada del sistema de ecuaci
 Una vez que la matriz está en forma escalonada reducida por filas, se puede leer directamente la solución del sistema de ecuaciones.
 
 ### Ejercicios en java
-[Ejemplos](https://github.com/ItaliaYLO/MetodosNumericosT3/blob/main/Problemario/gaussiana.txt)
+[Ejemplos](https://github.com/ItaliaYLO/MetodosNumericosT3/blob/main/Problemario/GaussJordan.txt)
 
 
 ## Método de Gauss Seidel
@@ -29,7 +29,7 @@ Este método mejora el método de Jacobi al actualizar los valores de las incóg
 Los nuevos valores calculados se utilizan inmediatamente en el cálculo de los siguientes valores.
 
 ### Ejercicios en java
-[Ejemplos](https://github.com/ItaliaYLO/MetodosNumericosT3/blob/main/Problemario/gaussiana.txt)
+[Ejemplos](https://github.com/ItaliaYLO/MetodosNumericosT3/blob/main/Problemario/gaussseidel.txt)
 
 
 ## Método de Jacobi
@@ -40,5 +40,5 @@ A diferencia del método de Gauss-Seidel, en el método de Jacobi, se utiliza la
 Aunque más simple conceptualmente que el método de Gauss-Seidel, el método de Jacobi puede ser menos eficiente en términos de velocidad de convergencia.
 
 ### Ejercicios en java
-[Ejemplos](https://github.com/ItaliaYLO/MetodosNumericosT3/blob/main/Problemario/gaussiana.txt)
+[Ejemplos](https://github.com/ItaliaYLO/MetodosNumericosT3/blob/main/Problemario/jacobi.txt)
 
