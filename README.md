@@ -1,5 +1,7 @@
 # MetodosNumericosT3
 
+## Italia Yoselin Lozada Olvera
+
 ## Método de Eliminación Gaussiana
 ### Descripcion 
 
