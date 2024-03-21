@@ -1,0 +1,67 @@
+public class NewtonMethodExample1 {
+
+    public static void main(String[] args) {
+        double root = newtonMethod(x -> x * x * x - 2 * x - 5, x -> 3 * x * x - 2, 2, 0.0001);
+        System.out.println("Root: " + root);
+    }
+
+    public static double newtonMethod(Function<Double, Double> f, Function<Double, Double> df, double x0, double tolerance) {
+        // Implementación del método de Newton
+    }
+}
+
+ejemplo2
+
+public class NewtonMethodExample2 {
+
+    public static void main(String[] args) {
+        double root = newtonMethod(x -> Math.sin(x) - x / 2, x -> Math.cos(x) - 0.5, 1, 0.0001);
+        System.out.println("Root: " + root);
+    }
+
+    public static double newtonMethod(Function<Double, Double> f, Function<Double, Double> df, double x0, double tolerance) {
+        // Implementación del método de Newton
+    }
+}
+
+ejemplo3
+
+public class NewtonMethodExample3 {
+
+    public static void main(String[] args) {
+        double root = newtonMethod(x -> Math.exp(x) - 3 * x, x -> Math.exp(x) - 3, 1, 0.0001);
+        System.out.println("Root: " + root);
+    }
+
+    public static double newtonMethod(Function<Double, Double> f, Function<Double, Double> df, double x0, double tolerance) {
+        // Implementación del método de Newton
+    }
+}
+
+ejemplo4
+
+public class NewtonMethodExample4 {
+
+    public static void main(String[] args) {
+        double root = newtonMethod(x -> Math.cos(x) - x, x -> -Math.sin(x) - 1, 0.5, 0.0001);
+        System.out.println("Root: " + root);
+    }
+
+    public static double newtonMethod(Function<Double, Double> f, Function<Double, Double> df, double x0, double tolerance) {
+        // Implementación del método de Newton
+    }
+}
+
+ejemplo5
+
+public class NewtonMethodExample5 {
+
+    public static void main(String[] args) {
+        double root = newtonMethod(x -> x * x - 4, x -> 2 * x, 2.5, 0.0001);
+        System.out.println("Root: " + root);
+    }
+
+    public static double newtonMethod(Function<Double, Double> f, Function<Double, Double> df, double x0, double tolerance) {
+        // Implementación del método de Newton
+    }
+}

@@ -1,0 +1,91 @@
+public class BisectionExample1 {
+
+    public static void main(String[] args) {
+        double root = bisectionMethod(x -> x * x - 4, 1, 3, 0.0001);
+        System.out.println("Root: " + root);
+    }
+
+    public static double bisectionMethod(Function<Double, Double> f, double a, double b, double tolerance) {
+        double fa = f.apply(a);
+        double fb = f.apply(b);
+        
+        if (fa * fb > 0) {
+            throw new IllegalArgumentException("No se puede garantizar una raíz en el intervalo dado.");
+        }
+        
+        double c = 0;
+        while ((b - a) / 2 > tolerance) {
+            c = (a + b) / 2;
+            double fc = f.apply(c);
+            if (fc == 0) {
+                break;
+            } else if (fa * fc < 0) {
+                b = c;
+                fb = fc;
+            } else {
+                a = c;
+                fa = fc;
+            }
+        }
+        return c;
+    }
+}
+
+ejemplo2 
+
+public class BisectionExample2 {
+
+    public static void main(String[] args) {
+        double root = bisectionMethod(x -> Math.sin(x) - x / 2, 0, 1, 0.0001);
+        System.out.println("Root: " + root);
+    }
+
+    public static double bisectionMethod(Function<Double, Double> f, double a, double b, double tolerance) {
+        // Implementación del método de bisección
+    }
+}
+
+
+ejemplo 3
+
+public class BisectionExample3 {
+
+    public static void main(String[] args) {
+        double root = bisectionMethod(x -> Math.exp(x) - 3 * x, 1, 2, 0.0001);
+        System.out.println("Root: " + root);
+    }
+
+    public static double bisectionMethod(Function<Double, Double> f, double a, double b, double tolerance) {
+        // Implementación del método de bisección
+    }
+}
+
+
+ejemplo4
+
+public class BisectionExample4 {
+
+    public static void main(String[] args) {
+        double root = bisectionMethod(x -> x * x * x - 2 * x - 5, 2, 3, 0.0001);
+        System.out.println("Root: " + root);
+    }
+
+    public static double bisectionMethod(Function<Double, Double> f, double a, double b, double tolerance) {
+        // Implementación del método de bisección
+    }
+}
+
+
+ejemplo5
+
+public class BisectionExample5 {
+
+    public static void main(String[] args) {
+        double root = bisectionMethod(x -> Math.cos(x) - x, 0, Math.PI / 2, 0.0001);
+        System.out.println("Root: " + root);
+    }
+
+    public static double bisectionMethod(Function<Double, Double> f, double a, double b, double tolerance) {
+        // Implementación del método de bisección
+    }
+}

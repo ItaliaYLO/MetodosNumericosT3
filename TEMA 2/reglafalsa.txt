@@ -1,0 +1,67 @@
+public class ReglaFalsaExample1 {
+
+    public static void main(String[] args) {
+        double root = reglaFalsa(x -> x * x * x - 2 * x - 5, 2, 3, 0.0001);
+        System.out.println("Root: " + root);
+    }
+
+    public static double reglaFalsa(Function<Double, Double> f, double a, double b, double tolerance) {
+        // Implementación del método de la regla falsa
+    }
+}
+
+ejemplo 2
+
+public class ReglaFalsaExample2 {
+
+    public static void main(String[] args) {
+        double root = reglaFalsa(x -> Math.sin(x) - x / 2, 0, 1, 0.0001);
+        System.out.println("Root: " + root);
+    }
+
+    public static double reglaFalsa(Function<Double, Double> f, double a, double b, double tolerance) {
+        // Implementación del método de la regla falsa
+    }
+}
+
+ejemplo 3
+
+public class ReglaFalsaExample3 {
+
+    public static void main(String[] args) {
+        double root = reglaFalsa(x -> Math.exp(x) - 3 * x, 1, 2, 0.0001);
+        System.out.println("Root: " + root);
+    }
+
+    public static double reglaFalsa(Function<Double, Double> f, double a, double b, double tolerance) {
+        // Implementación del método de la regla falsa
+    }
+}
+
+ejemplo 4
+
+public class ReglaFalsaExample4 {
+
+    public static void main(String[] args) {
+        double root = reglaFalsa(x -> Math.cos(x) - x, 0, Math.PI / 2, 0.0001);
+        System.out.println("Root: " + root);
+    }
+
+    public static double reglaFalsa(Function<Double, Double> f, double a, double b, double tolerance) {
+        // Implementación del método de la regla falsa
+    }
+}
+
+ejemplo 5
+
+public class ReglaFalsaExample5 {
+
+    public static void main(String[] args) {
+        double root = reglaFalsa(x -> x * x - 4, 1, 3, 0.0001);
+        System.out.println("Root: " + root);
+    }
+
+    public static double reglaFalsa(Function<Double, Double> f, double a, double b, double tolerance) {
+        // Implementación del método de la regla falsa
+    }
+}
